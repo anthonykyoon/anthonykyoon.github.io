@@ -5,11 +5,15 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
     background-color: #ffffff;
-    width: 45%;
+    width: 90%;
+    max-width: 800px; 
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -20,21 +24,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse; /* Move image to the right of the name */
+    flex-direction: row-reverse; 
     margin-bottom: 20px;
+    flex-wrap: wrap; 
 }
 
 .profile-picture {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-left: 20px; /* Adjust margin for spacing */
+    margin-left: 20px; 
+    margin-bottom: 10px; 
 }
 
 h1 {
     margin: 0;
     color: #333333;
     text-align: center;
+    flex: 1; 
 }
 
 section {
@@ -43,8 +50,8 @@ section {
 
 h2 {
     color: #333333;
-    text-align: left; /* Align h2 elements to the left */
-    margin-left: 20px; /* Optional: Add margin for better alignment */
+    text-align: left; 
+    margin-left: 20px;
 }
 
 p {
@@ -57,13 +64,13 @@ p {
 ul {
     color: #666666;
     line-height: 1.6;
-    list-style-type: disc; /* Ensure list items have bullets */
-    margin: 0 0 10px 20px; /* Add left margin for indentation */
+    list-style-type: disc; 
+    margin: 0 0 10px 20px; 
     padding: 0 20px;
 }
 
 ul li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px; 
 }
 
 a {
@@ -76,7 +83,38 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
     .container {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 100%; 
+        margin: 10px;
+    }
+
+    .header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .profile-picture {
+        margin-left: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-left: 0;
+    }
+
+    p, ul {
+        padding: 0 10px; 
+    }
+
+    ul {
+        margin-left: 10px;
     }
 }
