@@ -1,19 +1,22 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
     background-color: azure;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
+    padding: 20px; /* Add padding for better spacing */
 }
 
 .container {
     background-color: #ffffff;
-    width: 90%;
-    max-width: 800px; 
+    width: 90%; /* More responsive width */
+    max-width: 800px; /* Max width for larger screens */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -24,24 +27,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse; 
+    flex-direction: column; /* Default to column for mobile */
+    text-align: center; /* Center text */
     margin-bottom: 20px;
-    flex-wrap: wrap; 
 }
 
 .profile-picture {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-left: 20px; 
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Spacing for mobile */
 }
 
 h1 {
-    margin: 0;
+    margin: 10px 0; /* Add margin for spacing */
     color: #333333;
-    text-align: center;
-    flex: 1; 
 }
 
 section {
@@ -50,8 +50,8 @@ section {
 
 h2 {
     color: #333333;
-    text-align: left; 
-    margin-left: 20px;
+    text-align: left; /* Align to the left */
+    padding-left: 20px; /* Padding for better alignment */
 }
 
 p {
@@ -64,13 +64,13 @@ p {
 ul {
     color: #666666;
     line-height: 1.6;
-    list-style-type: disc; 
-    margin: 0 0 10px 20px; 
+    list-style-type: disc; /* Ensure list items have bullets */
+    margin: 0 0 10px 20px; /* Add left margin for indentation */
     padding: 0 20px;
 }
 
 ul li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Space between list items */
 }
 
 a {
@@ -82,39 +82,14 @@ a:hover {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        width: 100%; 
-        margin: 10px;
-    }
-
+@media only screen and (min-width: 769px) {
     .header {
-        flex-direction: column; 
-        align-items: center;
+        flex-direction: row; /* Row layout for larger screens */
+        text-align: left; /* Align text to the left */
     }
 
     .profile-picture {
-        margin-left: 0;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    h2 {
-        margin-left: 0;
-    }
-
-    p, ul {
-        padding: 0 10px; 
-    }
-
-    ul {
-        margin-left: 10px;
+        margin-left: 20px; /* Adjust margin for larger screens */
+        margin-bottom: 0; /* Remove bottom margin for larger screens */
     }
 }
