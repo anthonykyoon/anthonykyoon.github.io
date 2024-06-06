@@ -34,10 +34,12 @@ body {
 
 .profile-picture {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 145px;
+    height: 145x;
     margin-bottom: 10px; /* Spacing for mobile */
+    margin-left: 1px; /* Move the picture to the left edge */
 }
+
 
 h1 {
     margin: 10px 0; /* Add margin for spacing */
@@ -88,8 +90,8 @@ a:hover {
         text-align: left; /* Align text to the left */
     }
 
-    .profile-picture {
-        margin-left: 20px; /* Adjust margin for larger screens */
+    .header .profile-picture {
+        margin-left: 25px; /* Adjust margin for larger screens (original 20px + 5px) */
         margin-bottom: 0; /* Remove bottom margin for larger screens */
     }
 }
