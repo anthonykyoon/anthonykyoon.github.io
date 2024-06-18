@@ -7,18 +7,19 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    background-color: azure;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
     display: flex;
     justify-content: center;
-    padding: 20px; /* Add padding for better spacing */
+    padding: 20px;
 }
 
 .container {
-    background-color: #ffffff;
-    width: 90%; /* More responsive width */
-    max-width: 800px; /* Max width for larger screens */
+    background-color: #1e1e1e; /* Darker container background */
+    width: 90%;
+    max-width: 800px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
     border-radius: 8px;
     margin: 20px 0;
 }
@@ -27,23 +28,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Default to column for mobile */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .profile-picture {
     border-radius: 50%;
     width: 145px;
-    height: 145x;
-    margin-bottom: 10px; /* Spacing for mobile */
-    margin-left: 1px; /* Move the picture to the left edge */
+    height: 145px;
+    margin-bottom: 10px;
+    margin-left: 1px;
 }
 
-
 h1 {
-    margin: 10px 0; /* Add margin for spacing */
-    color: #333333;
+    margin: 10px 0;
+    color: #ffffff; /* Light heading color */
 }
 
 section {
@@ -51,47 +51,48 @@ section {
 }
 
 h2 {
-    color: #333333;
-    text-align: left; /* Align to the left */
-    padding-left: 20px; /* Padding for better alignment */
+    color: #ffffff; /* Light subheading color */
+    text-align: left;
+    padding-left: 20px;
 }
 
 p {
-    color: #666666;
+    color: #b0b0b0; /* Lighter paragraph text color */
     line-height: 1.6;
     margin: 0 0 10px;
     padding: 0 20px;
 }
 
 ul {
-    color: #666666;
+    color: #b0b0b0; /* Lighter list text color */
     line-height: 1.6;
-    list-style-type: disc; /* Ensure list items have bullets */
-    margin: 0 0 10px 20px; /* Add left margin for indentation */
+    list-style-type: disc;
+    margin: 0 0 10px 20px;
     padding: 0 20px;
 }
 
 ul li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px;
 }
 
 a {
-    color: #1a73e8;
+    color: #c0c0c0; /* Slightly brighter grey link color for dark mode */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #e0e0e0; /* Brighter grey for hover effect */
 }
 
 @media only screen and (min-width: 769px) {
     .header {
-        flex-direction: row; /* Row layout for larger screens */
-        text-align: left; /* Align text to the left */
+        flex-direction: row;
+        text-align: left;
     }
 
     .header .profile-picture {
-        margin-left: 25px; /* Adjust margin for larger screens (original 20px + 5px) */
-        margin-bottom: 0; /* Remove bottom margin for larger screens */
+        margin-left: 25px;
+        margin-bottom: 0;
     }
 }
