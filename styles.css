@@ -106,7 +106,7 @@ a {
 }
 
 .profile-container {
-  --profile-size: 451px;
+  --profile-size: 455px;
   display: flex;
   align-items: flex-start;   
   justify-content: center;
