@@ -97,13 +97,37 @@ body {
   right: 8px;
 }
 
-/* 6) Preserve left-align on lists */
 .lists {
   text-align: left;
 }
 
-/* 7) Link coloring */
 a {
   color: var(--link-color);
+}
+
+.profile-container {
+  --profile-size: 451px;
+  display: flex;
+  align-items: flex-start;   
+  justify-content: center;
+  padding: 0 1rem;           
+  gap: 1.5rem;
+}
+
+
+.profile-pic {
+  width: var(--profile-size);
+  height: var(--profile-size);
+  object-fit: cover;
+  border-radius: 2%;
+  transform: translateX(-20px);
+}
+
+.profile-container .content {
+  box-sizing: border-box;
+  height: var(--profile-size);      
+  max-width: var(--profile-size);
+  margin: 0;
+  overflow: auto;     
 }
 
