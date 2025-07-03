@@ -136,3 +136,34 @@ a {
   margin: 0;
   overflow: auto;     
 }
+
+/* MOBILE-FIRST FALLBACK: make sure neither element ever overflows */
+.profile-pic,
+.profile-container .content {
+  max-width: 100%;
+}
+
+/* BREAKPOINT for smaller screens */
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;    /* stack image above/below the card */
+    align-items: center;       /* center everything in column */
+    padding: 1rem;             /* breathing room on sides */
+    gap: 1rem;                 /* smaller gap vertically */
+  }
+
+  .profile-pic {
+    transform: none;           /* no left-shift on mobile */
+    width: 80vw;               /* scale to 80% of viewport width */
+    height: auto;              /* auto height to keep aspect ratio */
+    border-radius: 5%;         /* still rounded */
+    margin-bottom: 1rem;       /* space before the content */
+  }
+
+  .profile-container .content {
+    height: auto;              /* natural height for text */
+    max-width: 90vw;           /* fit within the viewport */
+    padding: 1rem;             /* you can tweak inner padding */
+  }
+}
+
