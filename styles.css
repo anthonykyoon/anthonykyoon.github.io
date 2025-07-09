@@ -173,6 +173,13 @@ a {
   .profile-container .content {
     height: auto;              /* natural height for text */
     max-width: 90vw;           /* fit within the viewport */
-    padding: 1rem;             /* you can tweak inner padding */
+    /* increased top padding so the toggle never overlaps the h2 */
+    padding: 3rem 1rem 1rem;
+  }
+
+  .theme-switch {
+    top: 1rem;
+    right: 1rem;
+    z-index: 10; /* keep it above the header */
   }
 }
