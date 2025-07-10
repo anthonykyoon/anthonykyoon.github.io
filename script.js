@@ -27,7 +27,7 @@
     });
   })();
   
-const LAST_UPDATED_STRING = "6/18/2025";
+const LAST_UPDATED_STRING = "7/10/2025";
 const lastUpdatedEl = document.getElementById('last-updated');
 
 // 3) Inject the string:
