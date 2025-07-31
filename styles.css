@@ -33,11 +33,11 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   text-align: center;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-size: 105%;
+  font-size: 100%;
 }
 
 /* 4) Box around the content and make it a positioning context */
