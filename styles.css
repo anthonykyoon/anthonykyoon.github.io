@@ -183,3 +183,52 @@ a {
     z-index: 10; /* keep it above the header */
   }
 }
+
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+body.loaded {
+  opacity: 1;
+}
+
+/* Global dark mode transitions (colors only) */
+body,
+.content,
+a {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Page transition (opacity & scale only, no background) */
+.profile-container,
+.profile-pic,
+.content {
+  transition: opacity 0.5s ease, transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+/* Index → Academic transition */
+.profile-container.transitioning .profile-pic {
+  opacity: 0;
+  transform: scale(0.95);
+}
+.profile-container.transitioning .content {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* Academic → Index reverse transition (final state in index) */
+body.reverse-transition .content {
+  opacity: 1;
+  transform: scale(1);
+  width: var(--profile-size);
+}
+body.reverse-transition .profile-pic {
+  opacity: 1;
+  transform: none;
+}
+
+/* Academic → Index leaving animation (on academic page) */
+body.reverse-transition-start .content {
+  opacity: 0;
+  transform: scale(0.95);
+}
