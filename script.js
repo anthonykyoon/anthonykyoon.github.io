@@ -2,11 +2,11 @@
     const toggle = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
     const STORAGE_KEY = 'theme-preference';
-  
+
     // On load: apply saved theme or OS preference
     const saved = localStorage.getItem(STORAGE_KEY);
     const osDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
+
     if (saved === 'dark' || (!saved && osDark)) {
       htmlEl.setAttribute('data-theme', 'dark');
       if (toggle) toggle.checked = true;
@@ -14,7 +14,7 @@
       htmlEl.setAttribute('data-theme', '');
       if (toggle) toggle.checked = false;
     }
-  
+
     // On toggle: switch theme & persist
     if (toggle) {
       toggle.addEventListener('change', () => {
@@ -30,7 +30,7 @@
 })();
 
 // Last updated text
-const LAST_UPDATED_STRING = "8/1/2025";
+const LAST_UPDATED_STRING = "8/21/2025";
 const lastUpdatedEl = document.getElementById('last-updated');
 if (lastUpdatedEl) lastUpdatedEl.textContent = LAST_UPDATED_STRING;
 
@@ -51,7 +51,7 @@ document.querySelectorAll('a[href$=".html"]').forEach(link => {
             // Academic → Index (reverse transition start)
             if (body.dataset.page === 'academic' && target.includes('index.html')) {
                 body.classList.add('reverse-transition-start');
-            } 
+            }
             // Index → Academic (normal transition)
             else {
                 const container = document.querySelector('.profile-container');
