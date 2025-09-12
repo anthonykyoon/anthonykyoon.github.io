@@ -30,7 +30,7 @@
 })();
 
 // Last updated text
-const LAST_UPDATED_STRING = "8/21/2025";
+const LAST_UPDATED_STRING = "9/12/2025";
 const lastUpdatedEl = document.getElementById('last-updated');
 if (lastUpdatedEl) lastUpdatedEl.textContent = LAST_UPDATED_STRING;
 
