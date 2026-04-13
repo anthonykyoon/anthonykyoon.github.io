@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony Yoon</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="scripts.js"></script>
+  <title>Example Post Title — Anthony Yoon</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../scripts.js"></script>
 </head>
 <body>
   <header>
     <div class="header-inner">
-      <a href="index.html" class="site-name">Anthony Yoon</a>
+      <a href="../index.html" class="site-name">Anthony Yoon</a>
       <nav>
-        <a href="index.html" class="active">about</a>
+        <a href="../index.html">about</a>
         <div class="theme-dropdown">
           <button id="theme-toggle" aria-label="Toggle theme" aria-expanded="false"></button><script>applyTheme(getTheme());</script>
           <ul class="theme-menu" role="menu">
@@ -26,19 +26,25 @@
   </header>
 
   <main>
-    <section class="bio">
-      <p>Hi, I'm Anthony Yoon. Current 3rd year at UChicago Studying <a href="https://cam.uchicago.edu/"> CAAM</a> and <a href="https://stat.uchicago.edu/">Statistics</a></p>
-      <p>I am broadly interested in computational problems. More specifically, I am interested in the application of mathematics to make processes more efficient. I also play the violin and help organize hackathons.</p>
-    </section>
+    <article class="post">
+      <header class="post-header">
+        <h1>Example Post Title</h1>
+        <time class="post-date" datetime="2026-03-18">2026-03-18</time>
+      </header>
+      <div class="post-body">
+        <p>This is the first paragraph of your post. Write whatever you like here.</p>
+<h2>A Subheading</h2>
+<p>You can use <strong>bold</strong>, <em>italic</em>, and <a href="https://example.com">links</a>.</p>
+<ul>
+<li>Bullet one</li>
+<li>Bullet two</li>
+<li>Bullet three</li>
+</ul>
+<p>Another paragraph to wrap things up.</p>
+      </div>
+    </article>
 
-    <section class="links">
-      <h2>Links</h2>
-      <ul>
-        <li><button class="reveal-email" data-e="YW50aG9ueWt5b29uIFthdF0gdWNoaWNhZ28gLiBlZHU=">email</button></li>
-        <li><a href="https://github.com/anthonykyoon">github</a></li>
-        <li><a href="https://linkedin.com/in/anthonykyoon">linkedin</a></li>
-      </ul>
-    </section>
+    <a href="../blog.html" class="back-link">back to blog</a>
   </main>
 
   <footer>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony Yoon</title>
+  <title>Blog — Anthony Yoon</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="scripts.js"></script>
 </head>
@@ -12,7 +12,7 @@
     <div class="header-inner">
       <a href="index.html" class="site-name">Anthony Yoon</a>
       <nav>
-        <a href="index.html" class="active">about</a>
+        <a href="index.html">about</a>
         <div class="theme-dropdown">
           <button id="theme-toggle" aria-label="Toggle theme" aria-expanded="false"></button><script>applyTheme(getTheme());</script>
           <ul class="theme-menu" role="menu">
@@ -26,17 +26,25 @@
   </header>
 
   <main>
-    <section class="bio">
-      <p>Hi, I'm Anthony Yoon. Current 3rd year at UChicago Studying <a href="https://cam.uchicago.edu/"> CAAM</a> and <a href="https://stat.uchicago.edu/">Statistics</a></p>
-      <p>I am broadly interested in computational problems. More specifically, I am interested in the application of mathematics to make processes more efficient. I also play the violin and help organize hackathons.</p>
-    </section>
-
-    <section class="links">
-      <h2>Links</h2>
+    <p>My thoughts and reflections on things</p>
+    <section class="post-list">
       <ul>
-        <li><button class="reveal-email" data-e="YW50aG9ueWt5b29uIFthdF0gdWNoaWNhZ28gLiBlZHU=">email</button></li>
-        <li><a href="https://github.com/anthonykyoon">github</a></li>
-        <li><a href="https://linkedin.com/in/anthonykyoon">linkedin</a></li>
+        <li>
+          <a href="blog/on-optimization.html">On Optimization</a>
+          <span class="post-date">2026-03-24</span>
+        </li>
+        <li>
+          <a href="blog/on-classes.html">On Classes</a>
+          <span class="post-date">2026-03-23</span>
+        </li>
+        <li>
+          <a href="blog/hello-world.html">Hello World!</a>
+          <span class="post-date">2026-03-18</span>
+        </li>
+        <li>
+          <a href="blog/example-post.html">Example Post Title</a>
+          <span class="post-date">2026-03-18</span>
+        </li>
       </ul>
     </section>
   </main>
