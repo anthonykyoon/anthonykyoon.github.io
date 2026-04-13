@@ -1,1 +1,12 @@
 testwebsite
+old_website
+CLAUDE.md
+config.json
+build.py
+new_post.py
+new_draft.py
+_*/
+deploy.sh
+SCRIPTS.md
+__pycache__/
+**/.DS_Store
