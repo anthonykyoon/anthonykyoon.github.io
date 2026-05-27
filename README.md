@@ -2,4 +2,4 @@
 
 trying to stay to HTML, CSS, JS because it's good practice. 
 
-Is some of this AI-generated? Most definitely.
+Is some of this AI-generated? Most definitely. Claude Code is way too good. 
