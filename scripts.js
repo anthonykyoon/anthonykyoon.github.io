@@ -50,6 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Insert a random fun fact from the encoded bank
+  const factEl = document.querySelector('.fun-fact');
+  if (factEl && factEl.dataset.facts) {
+    try {
+      const facts = JSON.parse(atob(factEl.dataset.facts));
+      if (facts.length) {
+        const fact = facts[Math.floor(Math.random() * facts.length)];
+        factEl.innerHTML = `<strong>Fun fact about me:</strong> ${fact}`;
+        factEl.hidden = false;
+      }
+    } catch (e) { /* no-op if facts are malformed */ }
+  }
+
   // Toggle email reveal on click (anti-scraping)
   const emailBtn = document.querySelector('.reveal-email');
   if (emailBtn) {
